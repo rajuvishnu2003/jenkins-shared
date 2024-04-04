@@ -4,8 +4,21 @@ pipeline {
     agent any
 
     stages {
-        kubernetes()
-        helm()
-        validations()
+        stage('Kubernetes') {
+            steps {
+                kubernetes()
+            }
+        }
+        stage('Helm') {
+            steps {
+                helm()
+            }
+        }
+        stage('Validations') {
+            steps {
+                validations()
+            }
+        }
     }
 }
+
