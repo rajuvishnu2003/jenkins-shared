@@ -5,7 +5,6 @@ def call() {
          //sh 'kubectl get nodes'
 	 sh 'ls -lhrt'
 	 sh 'date'
-	 sh 'kubectl get nodes'
       }
    }
 }

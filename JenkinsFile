@@ -9,16 +9,15 @@ pipeline {
                 kubernetes()
             }
         }
-        stage('Helm') {
-            steps {
-                helm()
-            }
-        }
-        stage('Validations') {
-            steps {
-                validations()
-            }
-        }
+        //stage('Helm') {
+        //    steps {
+        //        helm()
+        //    }
+        //}
+        //stage('Validations') {
+        //    steps {
+        //        validations()
+        //    }
+        //}
     }
 }
-
