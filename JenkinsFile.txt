@@ -1,0 +1,11 @@
+@Library('vars') _
+
+pipeline {
+    agent any
+
+    stages {
+        kubernetes()
+        helm()
+        validations()
+    }
+}
